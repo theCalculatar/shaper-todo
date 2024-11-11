@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(230, 224, 224);
+}
+
+.app {
+  display: flex;
+  padding: 0 5%;
+  gap: 20px;
+  min-height: 767px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  align-items: center;
+  padding-top: 30px;
+}
+.input-container .task-input {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.input-container button {
+  height: 30px;
+  margin-top: 40px;
+  padding: 0 15px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.task-container {
+  padding-top: 30px;
+}
+.task-container .task-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.task-list li {
+  position: relative;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 25px 25px 0 rgba(77, 77, 79, 0.08);
+}
+
+.task-list .priority-color {
+  position: absolute;
+  left: 0;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+}
+
+.task-list li .content {
+  display: flex;
+  flex-direction: column;
+}
+.task-list li .content .editable-description {
+  font-size: 12px;
+  font-weight: normal;
+  outline: none;
+}
+.editable-title {
+  outline: none;
+  font-weight: 600;
+  color: rgb(64, 64, 64);
+}
+.task-list li .butttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+.task-list li .butttons > p {
+  font-size: 12px;
+  font-weight: 600;
+  color: darkgray;
+  cursor: pointer;
+}
+.task-list li button {
+  outline: none;
+  border: none;
+  color: red;
+}
+.task-list li .title {
+  font-weight: bold;
+  font-size: 16px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do App</title>
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="input-container">
+        <h1>To-do List</h1>
+        <input type="text" class="task-input" placeholder="Title" id="title" />
+        <input
+          type="text"
+          class="task-input"
+          placeholder="Description"
+          id="description"
+        />
+        <select type="text" class="task-input" id="priority">
+          <option value="low">low</option>
+          <option value="medium">medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="addTask">Add task</button>
+      </div>
+      <hr />
+      <div class="task-container">
+        <ul class="task-list">
+          <li>
+            <div class="priority-color"></div>
+            <div class="content">
+              <span contenteditable="true" class="title">Clean</span>
+              <span contenteditable="true">This is discription</span>
+            </div>
+            <div class="butttons">
+              <button class="del-btn"><i class="bi bi-trash-fill"></i></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="scripts/script.js"></script>
+  </body>
+</html>

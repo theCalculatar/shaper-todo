@@ -1,0 +1,45 @@
+{
+  "liveServer.settings.port": 5501,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "myDB",
+      "database": "todo",
+      "username": "postgres",
+      "password": ""
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "movies",
+      "database": "postgres",
+      "username": "postgres",
+      "password": ""
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "airplane",
+      "database": "airplane",
+      "username": "postgres",
+      "password": ""
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "ayanda",
+      "database": "todos",
+      "username": "postgres",
+      "password": ""
+    }
+  ]
+}
