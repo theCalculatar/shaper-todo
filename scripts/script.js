@@ -57,7 +57,7 @@ const display = async () => {
         const todo = todos.filter((todo) => {
           return todo.id == todoID;
         })[0];
-        editTodo({ ...todo, task: span.innerHTML });
+        editTodo({ ...todo, task: span.textContent.trim() });
       }, 2000);
     });
   });
@@ -71,7 +71,7 @@ const display = async () => {
         const todo = todos.filter((todo) => {
           return todo.id == todoID;
         })[0];
-        await editTodo({ ...todo, description: spand.innerHTML });
+        await editTodo({ ...todo, description: spand.textContent.trim() });
       }, 2000);
     });
   });
